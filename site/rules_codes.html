@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="login-html">
+<head>
+    <title>Checker Codes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../m/login_register_style.css" />    <script type="text/javascript" src="../m/login_script.js"></script>        <script type="text/javascript">
+        var i18n = {
+            'Empty login.': 'Empty login.',
+            'Empty password.': 'Empty password.'
+        };
+    </script>
+</head>
+<body>
+<div id="page">
+    <div id="logo">
+        <a href="../index.html"><img src="../img/logo.png" alt="VaultMarket" /></a>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li ><a href="../login.html">Log IN</a></li>
+            <li ><a href="../register.html">Register</a></li>
+        </ul>
+    </div>
+                            
+    <div id="content">
+        <h1>Checker Codes</h1>
+
+<h2>List of authorization responses:</h2>        
+
+<table class="table" width="100%">
+    <tbody>
+        <tr>
+            <td class="chartreuse"></td>
+            <td> &mdash; Card GOOD (approved)</td>
+        </tr>
+        <tr>
+            <td class="coral"></td>
+            <td> &mdash; Card BAD (Hold-Call/Pick-Up)</td>
+        </tr>
+        <tr>
+            <td class="light-gray"></td>
+            <td> &mdash; Declined (sometimes may be approved thru other processors).</td>
+        </tr>
+        <tr>
+            <td class="cornflower-blue"></td>
+            <td> &mdash; Few responses for auto-recheck. Cost 0 credits.</td>
+        </tr>
+        <tr>
+            <td class="bisque"></td>
+            <td> &mdash; Our pre-auth system response. Cost 0 credits.</td>
+        </tr>
+    </tbody>
+</table>
+
+<br />
+
+<table class="table" width="100%">
+    <tbody>
+        <tr>
+            <th class="p10">AUTH_CODE</th>
+            <th class="p30">AUTH_MESSAGE</th>
+            <th>DEFINITION</th>
+        </tr>
+        <tr class="chartreuse">
+            <td>00</td>
+            <td>Approved</td>
+            <td>Approved and Completed</td>
+        </tr>
+        <tr class="chartreuse">
+            <td>85</td>
+            <td>Card Ok</td>
+            <td>No Reason to Decline</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Call</td>
+            <td>Refer to Issuer</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Call</td>
+            <td>Refer to Issuer - Special Condition</td>
+        </tr>
+        <tr class="cornflower-blue">
+            <td>28</td>
+            <td>No Reply</td>
+            <td>File is Temporarily Unavailable</td>
+        </tr>
+        <tr>
+            <td>91</td>
+            <td>No Reply</td>
+            <td>Issuer or Switch is Unavailable</td>
+        </tr>
+        <tr class="coral">
+            <td>04</td>
+            <td>Hold-call or Pick Up Card</td>
+            <td>Pick Up Card</td>
+        </tr>
+        <tr class="coral">
+            <td>07</td>
+            <td>Hold-call or Pick Up Card</td>
+            <td>Pick Up Card - Special Condition</td>
+        </tr>
+        <tr class="coral">
+            <td>41</td>
+            <td>Hold-call or Pick Up Card</td>
+            <td>Pick Up Card - Lost</td>
+        </tr>
+        <tr class="coral">
+            <td>43</td>
+            <td>Hold-call or Pick Up Card</td>
+            <td>Pick Up Card - Stolen</td>
+        </tr>
+        <tr>
+            <td>EA</td>
+            <td>Acct Length Err</td>
+            <td>Verification Error</td>
+        </tr>
+        <tr>
+            <td>79</td>
+            <td>Already Reversed</td>
+            <td>Already Reversed at Switch</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Amount Error</td>
+            <td>Invalid Amount</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Card No. Error</td>
+            <td>Invalid Card Number</td>
+        </tr>
+        <tr>
+            <td>82</td>
+            <td>Cachback Not App</td>
+            <td>Cashback Limit Exceeded</td>
+        </tr>
+        <tr>
+            <td>N3</td>
+            <td>Cashback Not Avl</td>
+            <td>Cashback Service Not Available</td>
+        </tr>
+        <tr>
+            <td>EB</td>
+            <td>Check Digit Err</td>
+            <td>Verification Error</td>
+        </tr>
+        <tr>
+            <td>EC</td>
+            <td>CID Format Err</td>
+            <td>Verification Error</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td>Date Error</td>
+            <td>Invalid Date</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>Decline</td>
+            <td>Do Not Honor</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>Decline</td>
+            <td>Insufficient Funds</td>
+        </tr>
+        <tr>
+            <td>N4</td>
+            <td>Decline</td>
+            <td>Exceeds Issuer Withdrawal Limit</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td>Decline</td>
+            <td>Exceeds Withdrawal Limit</td>
+        </tr>
+        <tr>
+            <td>62</td>
+            <td>Decline</td>
+            <td>Invalid Service Code, Restricted</td>
+        </tr>
+        <tr>
+            <td>65</td>
+            <td>Decline</td>
+            <td>Activity Limit Exceeded</td>
+        </tr>
+        <tr>
+            <td>93</td>
+            <td>Decline</td>
+            <td>Violation, Cannot Complete</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>Expired Card</td>
+            <td>Expired Card</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Invalid Trans</td>
+            <td>Invalid Transaction</td>
+        </tr>
+        <tr>
+            <td>78</td>
+            <td>No Account</td>
+            <td>No Account</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>No Such Issuer</td>
+            <td>No Such Issuer</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Re Enter</td>
+            <td>Re-Enter Transaction</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>Serv Not Allowed</td>
+            <td>Trans. Not Permitted - Card</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td>Serv Not Allowed</td>
+            <td>Trans. Not Permitted - Terminal</td>
+        </tr>
+        <tr>
+            <td>96</td>
+            <td>System Error</td>
+            <td>System Malfunction</td>
+        </tr>
+        <tr>
+            <td>N7</td>
+            <td>CVV2 Mismatch</td>
+            <td>CVV2 Value Supplied Is Invalid</td>
+        </tr>
+    </tbody>
+</table>    </div>
+
+    <div id="footer">
+        2011 &copy; <a href="../index.html">Vault Market</a> - Easy way to Pay
+| <a href="rules.html">Rules</a>
+| <a href="contact.html">Contact Us</a>
+    </div>
+</div>
+</body>
+</html>

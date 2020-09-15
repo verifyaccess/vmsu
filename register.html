@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="register-html">
+<head>
+    <title>Register</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="m/login_register_style.css" />    <script type="text/javascript" src="m/register_script.js"></script>        <script type="text/javascript">
+        var i18n = {
+        };
+    </script>
+</head>
+<body>
+<div id="page">
+    <div id="logo">
+        <a href="index.html"><img src="img/logo.png" alt="VaultMarket" /></a>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li ><a href="login.html">Log IN</a></li>
+            <li  class="active"><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+                            
+    <div id="content">
+        <script type="text/javascript">/*<![CDATA[*/
+function ShowBlock(mode) {
+    document.getElementById('block-invite').style.display = (mode == 'Invite') ? 'block' : 'none';
+}
+/*]]>*/</script>
+<h1>Registration</h1>
+
+<form action="register.html" method="post" class="form wide-cols">
+    
+    <div class="form-row">
+        <div class="form-label">
+            <label for="login">Login:</label>
+        </div>
+        <div class="form-field">
+            <input id="login" type="text" name="login" value="" />
+            <br />        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-label">
+            <label for="password">Password:</label>
+        </div>
+        <div class="form-field">
+            <input id="password" type="password" name="password" value="" />
+            <br />        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-label">
+            <label for="password2">Repeat password:</label>
+        </div>
+        <div class="form-field">
+            <input id="password2" type="password" name="password2" value="" />
+            <br />        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-label">
+            <label for="email">E-Mail:</label>
+        </div>
+        <div class="form-field">
+            <input id="email" type="text" name="email" value="" />&nbsp;*
+            <br />        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-label">
+            <label for="icq">ICQ:</label>
+        </div>
+        <div class="form-field">
+            <input id="icq" type="text" name="icq" value="" />&nbsp;*
+            <br />        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-label">
+            <label for="jabber">Jabber:</label>
+        </div>
+        <div class="form-field">
+            <input id="jabber" type="text" name="jabber" value="" />&nbsp;*
+            <br />        </div>
+    </div>
+
+        <div class="form-row">
+        <div class="form-label">
+            <label for="rtype-invite">Registration type:</label>
+        </div>
+        <div class="form-field">
+            <label for="rtype-invite"><input id="rtype-invite" name="rtype" value="Invite" type="radio" onclick="ShowBlock(this.value)" /> I have invite code</label><br />
+            <label for="rtype-prepay"><input id="rtype-prepay" name="rtype" value="Prepay" type="radio" onclick="ShowBlock(this.value)" /> I will make a <strong>$10.00</strong> deposit<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(this money will be added to your balance)</i></label>
+            <br />        </div>
+    </div>
+    
+        <div class="form-row" id="block-invite" style="display: none;">
+        <div class="form-label">
+            <label for="invite">Invite code:</label>
+        </div>
+        <div class="form-field">
+            <input id="invite" type="text" name="invite" value="" />
+            <br />        </div>
+    </div>
+    
+    <div class="form-row">
+        <div class="form-label" style="padding-top: 28px;">
+            <label for="captcha">Captcha:</label>
+        </div>
+        <div class="form-field">
+            <input id="captcha" type="text" name="captcha" value="" />&nbsp;
+            <a href="#" title="Click to reload" class="captcha"><img src="captcha.jpeg" width="120" height="45" alt="Enable images" style="vertical-align: bottom;" /></a>
+            <br />        </div>
+    </div>
+
+    <div class="form-row" style="margin-top: 2em;">
+        <div class="form-label">&nbsp;</div>
+        <div class="form-field">
+            <label for="agreement"><input id="agreement" type="checkbox" name="agreement" value="Yes" /> I agree to the <a href="site/rules.html">following rules</a>.</label>
+            <br />        </div>
+    </div>
+
+    <div class="form-buttons" style="margin-top: 1.5em;">
+        <input type="submit" name="register_button" value="Register" />
+        <input type="hidden" name="securitytoken" value="aGFja2luZyBhdHRlbXB0IGRldGVjdGVkIGU5Y2M2NGY0NjFhN2Y4MWI1MzliNzFmOWM0ODljOGQz" />
+        <input type="hidden" name="securitytoken2" value="MTM0MjI5MzExMDg0MjU5NjAzMjUxMTg3NjQyMjE2ODcyMjYwMg==" />
+    </div>
+
+    <p style="margin-top: 2.5em;">* Please specify valid E-mail, ICQ / Jabber as we may use them to send critical notifications about our service.</p>
+
+    <object id="flogin1" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="70" height="0">
+        <param name="movie" value="/img/flogin.swf" />
+        <!--[if !IE]>-->
+        <object id="flogin2" type="application/x-shockwave-flash" width="70" height="0" data="img/flogin.swf">
+            <param name="movie" value="/img/flogin.swf" />
+        </object>
+        <!--<![endif]-->
+    </object>
+</form>
+    </div>
+
+    <div id="footer">
+        2011 &copy; <a href="index.html">Vault Market</a> - Easy way to Pay
+| <a href="site/rules.html">Rules</a>
+| <a href="site/contact.html">Contact Us</a>
+    </div>
+</div>
+</body>
+</html>
